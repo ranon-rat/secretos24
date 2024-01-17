@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{template "head"}}
+
+    <link rel="stylesheet" href="static/style/posts.css">
+</head>
+
+<body>
+
+    <div>
+        {{template "submit"}}
+    </div>
+
+    <!--
+
+        Estructura de un post
+    -->
+    {{range .}}
+   <p>
+    <div class="post">
+        
+        <p><span class="name">{{.Name}}</span><span class="Date">{{.Date}}</span></p>
+        <p>{{.Title}}</p>
+
+        <div class="multiline">{{.Content}}</div>
+    </div>
+</p>
+    {{end}}
+</body>
+
+</html>

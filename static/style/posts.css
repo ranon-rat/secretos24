@@ -1,0 +1,26 @@
+
+.input {
+    color: #00ffff;
+}
+.post {
+    display: inline-block;
+    outline: 1px solid #00ffff;;
+    border-radius: 1px;
+    margin: 10px 10px 10px 10px;
+    min-height: 50vh;
+}
+
+.nombre {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: #00ffff;
+}
+
+.fecha {
+    margin-left: 10px;
+}
+
+
+
+
+

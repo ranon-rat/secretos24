@@ -1,0 +1,13 @@
+.catalog-post{
+    outline: 1px solid #00ffff;;
+    border-radius: 1px;
+    margin: 10px 10px 10px 10px;
+}
+#catalog>*{
+    margin:auto;
+}
+
+a{
+    color: #00ffff;
+text-decoration: none;;
+}

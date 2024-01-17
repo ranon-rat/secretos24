@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{template "head"}}
+    <title>{{template "page-name"}}</title>
+    <link rel="stylesheet" href="static/style/index.css">
+</head>
+<body>
+    <h1 id="title" class="center" align="center">
+        {{template "page-name"}}
+    </h1>
+    {{template   "submit"}}
+
+
+    <div id="catalog">
+        <h2>Catalog</h2>
+        {{range $key,$value:=.}}
+        <a href="/thread?id={{$key}}">
+            <div class="catalog-post">
+                <p>
+                    {{$post:=(index $value 0)}}
+
+
+                    user:<b>{{$post.Name}}</b>
+                    R:{{len $value}}
+                    <br>
+
+                    <b>{{$post.Title}}
+                </b>
+                    </p>
+            </div>
+        </a>
+
+        {{end}}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+{{define "submit"}}
+<form id="submit" class="center">
+    <table>
+        <tbody>
+            <tr id="nombre">
+                <td class="input">
+                    Name:
+
+                </td>
+                <td>
+                    <input name="name" type="text" placeholder="anon" value="anon">
+                </td>
+            </tr>
+            <tr id="titulo">
+                <td class="input">
+                    Title:
+                </td>
+                <td> <input name="title" type="text" placeholder="title" required>
+
+                </td>
+            </tr>
+            <tr id="Content">
+                <td class="input">
+                    Content:
+                </td>
+                <td>
+                    <textarea placeholder="escribe aqui" name="content" id="" cols="30" rows="10"
+                        required></textarea>
+                </td>
+            </tr>
+            <tr id="Verification">
+                <td class="input">
+                    Verification:
+                </td>
+                <td>
+                    <p>
+                        <button type="button" id="get-captcha">Get Captcha</button>
+
+                        <input type="text" name="captcha" id="captcha" placeholder="Respuesta">
+                    </p>
+                    <div id="captcha-image">captcha</div>
+                    <span style="visibility: hidden;" id="captcha-id">idasd</span>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+    <p align="center">
+        <button class="center" align="center" id="botonposteo" type="submit">Post</button>
+
+    </p>
+    <br>
+</form>
+{{end}}
